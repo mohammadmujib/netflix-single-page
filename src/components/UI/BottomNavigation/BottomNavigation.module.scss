@@ -1,0 +1,31 @@
+@import '../../../_variables.scss';
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  button {
+    opacity: 0.8;
+    transition: border-color .4s ease, opacity 0.4s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+
+    &.active {
+      background-color: $red;
+      opacity: 1;
+    }
+
+    &:hover {
+      background-color: #7c1309;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../_variables.scss';
+
+.wrapper {
+  position: relative;
+  // height: calc(100vh - 78px);
+  display: flex;
+
+  .main {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    // &::before {
+    //   content: '';
+    //   background-image: linear-gradient(to right, #0f1011, transparent);
+    //   width: 150%;
+    //   height: 100%;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+  }
+
+
+  .info {
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    padding: 4rem 0rem 4rem 1rem;
+
+    .additional {
+      display: flex;
+      align-items: center;
+      color: $gray;
+      margin: 1rem 0 2rem;
+
+      span {
+        margin-right: 0.9rem;
+        font-size: 16px;
+      }
+
+      .ageLimit{
+        border: 1px solid $gray;
+        border-radius: 6px;
+        padding: 1px;
+      }
+    }
+
+    .description {
+      color: $gray;
+      font-size: 20px;
+      margin-bottom: 3rem;
+    }
+  }
+}

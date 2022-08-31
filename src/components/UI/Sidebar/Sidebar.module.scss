@@ -1,0 +1,42 @@
+@import '../../../_variables.scss';
+
+.sidebar {
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: $gray;
+    font-size: 36px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    animation: opacity .4s;
+
+    &.show {
+      display: block;
+    }
+
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.link {
+  padding: 0.5rem;
+  display: block;
+  color: $gray;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  font-size: 20px;
+  padding-left: 30px;
+
+  &:hover,
+  &:active {
+    border-color: $red;
+    background-color: #2A2A2C;
+  }
+}

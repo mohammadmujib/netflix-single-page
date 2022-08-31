@@ -6,10 +6,17 @@ import styles from './Header.module.scss';
 const Header = () => {
   return (
     <div className={styles.wrapper}>
-      <a href='/'>
-        <img src='' alt=''/>
-      </a>
-      <Search />
+      <div>
+        <a href='/'>
+          <img
+            src='https://www.freepnglogos.com/uploads/netflix-logo-0.png'
+            alt='Netflix'
+            height='35'
+            width='112'
+          />
+        </a>
+        <Search />
+      </div>
       <Profile />
     </div>
   )
