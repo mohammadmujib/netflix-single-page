@@ -8,23 +8,27 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 
   button {
     opacity: 0.8;
-    transition: border-color .4s ease, opacity 0.4s ease;
-    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s ease, opacity 0.4s ease;
+    border: none;
+    border-bottom: 4px solid transparent;
     padding-bottom: 0.5rem;
     font-size: 20px;
     text-transform: uppercase;
     color: #fff;
+    background-color: transparent;
+    margin: 0 1rem;
 
     &.active {
-      background-color: $red;
+      border-color: $red;
       opacity: 1;
     }
 
     &:hover {
-      background-color: #7c1309;
+      border-color: #7c1309;
       opacity: 1;
     }
   }

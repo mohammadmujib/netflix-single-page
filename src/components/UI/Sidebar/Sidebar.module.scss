@@ -1,12 +1,14 @@
 @import '../../../_variables.scss';
 
 .sidebar {
+  z-index: 1;
 
   button {
     background-color: transparent;
     border: none;
     color: $gray;
     font-size: 36px;
+    padding-left: 22px;
   }
 
   ul {
@@ -35,7 +37,7 @@
   padding-left: 30px;
 
   &:hover,
-  &:active {
+  &.active {
     border-color: $red;
     background-color: #2A2A2C;
   }

@@ -22,8 +22,8 @@ const BottomNavigation = ({ activeTab, setActiveTab }) => {
       {tabs.map(btn => (
         <button
           key={btn.id}
-          className={activeTab === btn.id ? activeTab : ''}
           onClick={() => setActiveTab(btn.id)}
+          className={activeTab === btn.id ? styles.active : ''}
         >
           {btn.name}
         </button>
