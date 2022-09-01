@@ -21,18 +21,18 @@ const Main = () => {
         className={styles.main}
         style={{
           backgroundImage: `url(${DATA[0].mainImage})`,
-          width: sidebarShow ? '85%' : '90%'
+          width: sidebarShow ? '85%' : '90%',
         }}
       >
-        {activeTab === 1
-          ? <Information
-            movie={DATA[0]}
-          />
-          : activeTab === 2 && <Episodes />
-        }
-        <BottomNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      </div>
+      {activeTab === 1
+        ? <Information
+          movie={DATA[0]}
+        />
+        : activeTab === 2 && <Episodes />
+      }
+      <BottomNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>
+    </div >
   )
 }
 

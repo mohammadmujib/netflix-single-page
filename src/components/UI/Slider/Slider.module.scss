@@ -1,15 +1,33 @@
-.swiper{
-  width: 80%;
+@import '../../../_variables.scss';
+
+.swiper {
+  width: 99%;
   max-height: 300px;
-  .swiperslide{
-    .number{
-      color: white;
+  margin-bottom: 80px;
+
+  .swiperslide {
+    position: relative;
+
+    .number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 66px;
+      color: #0f1011;
+      opacity: .8;
+      text-shadow:
+        0 0 1px #fff,
+        0 0 10px $gray;
+      ;
     }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
+      padding: 0;
     }
   }
 }

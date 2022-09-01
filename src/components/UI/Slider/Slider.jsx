@@ -2,9 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './Slider.module.scss';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 const Slider = ({ data, spaceBetween = 50, slidesPerView = 5 }) => {
   return (
@@ -17,7 +14,7 @@ const Slider = ({ data, spaceBetween = 50, slidesPerView = 5 }) => {
     >
       {data.map(item => (
         <SwiperSlide className={styles.swiperslide} key={item.id}>
-          <div className={styles.number}>{item.id}</div>
+          <span className={styles.number}>{item.id}</span>
           <img src={item.img} alt='screenshot' />
         </SwiperSlide>
       ))}
