@@ -11,8 +11,8 @@ npm run start
 ```
 
 ## Из интересного 
-### React practice
-### clsx, bcs "just use clsx"
-### boxicons
-### sass (давно не использовал)
-### react-select
+- React practice
+- clsx, bcs "just use clsx"
+- boxicons
+- sass (давно не использовал)
+- react-select
