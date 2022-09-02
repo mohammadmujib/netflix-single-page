@@ -1,17 +1,47 @@
 @import '../../../_variables.scss';
 
-.wrapper{
+.wrapper {
   padding-bottom: 40px;
-  img{
+
+  img {
     padding: 3.5rem 0rem 0rem 1rem;
   }
-    .links{
+
+  .links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 3rem 0 2rem;
+    color: rgba($color: #fff, $alpha: 0.8);
+
+    padding-right: 90px;
+
+    .season {
       position: relative;
-      display: flex;
-      justify-content: space-between;
-      padding: 3rem 0 2rem;
-      color: rgba($color: #fff, $alpha: 0.8);
-      font-size: 26px;
-      padding-right: 90px;
+      font-size: 28px;
+      cursor: pointer;
+      span {
+        padding-right: 10px;
+      }
+
+      i {
+        margin-top: 10px;
+        font-size: 16px;
+      }
     }
+
+    .seeAll {
+      font-size: 22px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      cursor: pointer;
+
+      i {
+        font-size: 26px;
+        padding-top: 4px;
+      }
+    }
+  }
 }

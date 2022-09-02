@@ -5,7 +5,7 @@
   // height: calc(100vh - 78px);
   display: flex;
   justify-content: flex-end;
-  min-height: 550px;
+  min-height: 630px;
 
   .main {
     background-size: cover;
@@ -17,6 +17,22 @@
       content: '';
       background-image: linear-gradient(to right, #0f1011, transparent);
       width: 150%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .episodes_bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      background-image: linear-gradient(to right, #0f1011, transparent);
+      width: 750%;
       height: 100%;
       position: absolute;
       top: 0;

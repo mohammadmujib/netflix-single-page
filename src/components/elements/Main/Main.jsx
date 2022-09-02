@@ -18,7 +18,7 @@ const Main = () => {
         setSidebarShow={setSidebarShow}
       />
       <div
-        className={styles.main}
+        className={activeTab === 2 ? styles.episodes_bg : styles.main}
         style={{
           backgroundImage: `url(${DATA[0].mainImage})`,
           width: sidebarShow ? '85%' : '90%',
