@@ -1,8 +1,7 @@
 # Star Wars App
 
 ## Ссылки
-- [Проект] ()
-- [Репозиторий] ()
+- [Репозиторий] (https://github.com/cheechqt/netflix-single-page)
 - [Макет] (https://dribbble.com/shots/11111860-NETFLIX-REDESIGN-UX-UI-Movies-TV-Series)
 
 ## Скрипты
