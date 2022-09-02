@@ -1,4 +1,4 @@
-# Star Wars App
+# Netflix single page clone
 
 ## Ссылки
 - [Репозиторий] (https://github.com/cheechqt/netflix-single-page)
